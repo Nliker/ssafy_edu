@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td {
+            width:500px;
+            
+        }
+        table{
+            border:3px solid rgb(212, 131, 233);
+            border-collapse: collapse;
+        }
+        td,th{
+            border:2px solid rgb(221, 162, 236);
+            border-collapse: collapse;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        table,thead,tbody,tfoot,tr,th,td
+        table
+            >thead,tbody,tfoot :생략가능
+                >tr
+                    >th,td
+        *tbody를 명시하지 않는다면 브라우저에서 자동으로 삽입된다.
+        *th는 td와 다르게 굵기,가운데 정렬이 일어난다.
+     -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">선수의 정보</th>
+            </tr>
+            <tr>
+                <td>국적</td>
+                <td>이름</td>
+                <td>소속팀</td>
+                <td>나이</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="6">대한민국</th>
+                <td>손흥민</td>
+                <td>토트넘</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>이강인</td>
+                <td>파리</td>
+                <td>24</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>총인원</td>
+                <td colspan="3">2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

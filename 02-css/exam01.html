@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  css주석문  
+            선택자{
+                속성명: 속성값;
+                속성명: 속성값;
+            }
+            선택자의 대표 종류
+            전체 : *
+            아이디 : #아이디값
+            클래스 : .클래스속성값
+            태그 : 태그명
+            부모 자식 관계 활용 : 부모>자식(바로 아래단계만),부모 자식(재귀적 으로 모든 태그 선택)
+        */
+        * {
+            border:3px solid rgb(215, 151, 245);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>css선택자 연습하기</h1>
+        <h2>선택자의 종류</h2>
+    </div>
+    <div>
+        <h2>선택자 연습1</h2>
+        <ul class="border">
+            <li>전체 선택자</li>
+            <li id="id_test">아이디 선택자</li>
+            <li class="class_test">클래스 선택자</li>
+            <li>태그 선택자</li>
+        </ul>
+        <h2>선택자 연습2</h2>
+        <ul>
+            <li>전체 선택자</li>
+            <li id="id_test">아이디 선택자</li>
+            <li class="class_test">클래스 선택자</li>
+            <li>태그 선택자</li>
+        </ul>
+    </div>
+</body>
+</html>

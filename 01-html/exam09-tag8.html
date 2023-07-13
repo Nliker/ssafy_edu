@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form 관련 태그
+        :사용자 입력 관련 태그
+        사용자 정보 받는 태그(3개)
+        :input(type),select,textarea
+
+    -->
+
+    <form>
+        <div>
+            <label>hidden : </label>
+            <input type="hidden" name="msg" value="html">
+        </div>
+        <div>
+            <label>text : </label>
+            <input type="text" name="id">
+        </div>
+        <div>
+            <label>password : </label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>checkbox : </label>
+            <div>
+                <label><input type="checkbox">사과</label>
+                <label><input type="checkbox">배</label>
+                <label><input type="checkbox">딸기</label>
+            </div>
+            <div>
+                <input type="checkbox" id="fruit1"><label for="fruit1">사과</label>
+                <input type="checkbox" id="fruit2"><label for="fruit2">배</label>
+                <input type="checkbox" id="fruit3"><label for="fruit3">딸기</label>
+            </div>
+        </div>
+        <div>
+            <label>radio: </label>
+            <div>
+                <input type="radio" id="radio1" name="gender"><label for="radio1">남</label>
+                <input type="radio" id="radio2" name="gender"><label for="radio2">여</label>
+            </div>
+        </div>
+        <div>
+            <label>color : </label>
+            <input type="color">
+        </div>
+        <div>
+            <label>button,submit,reset: </label>
+            <div>
+                <input type="button" value="클릭" onclick="alert('')">
+                <input type="submit" value="가입">
+                <input type="reset" value="취소">
+            </div>
+        </div>
+        <div>
+            <select>
+                <option>지역</option>
+                <option>서울</option>
+                <option>대전</option>
+                <option>광주</option>
+                <option>부산</option>
+
+            </select>
+        </div>
+        <div>
+            <textarea rows="10" cols="50">자기소개를 작성하세요</textarea>
+        </div>
+    </form>
+</body>
+</html>
